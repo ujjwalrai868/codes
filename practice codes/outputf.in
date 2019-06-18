@@ -1,0 +1,39 @@
+enter size of the stack: 
+Instructions: 
+1.Enter 1 for push and any 0 for pop and -1 to stop the program: Enter data to be pushed: n is: 10
+top is: 0
+
+new stack after operation is: 
+10 
+Enter data to be pushed: n is: 10
+top is: 1
+
+new stack after operation is: 
+10 20 
+Enter data to be pushed: n is: 10
+top is: 2
+
+new stack after operation is: 
+10 20 30 
+Enter data to be pushed: n is: 10
+top is: 3
+
+new stack after operation is: 
+10 20 30 40 
+new stack after operation is: 
+10 20 30 
+new stack after operation is: 
+10 20 
+new stack after operation is: 
+10 
+new stack after operation is: 
+
+memory underflow:(
+new stack after operation is: 
+
+Enter data to be pushed: n is: 10
+top is: 0
+
+new stack after operation is: 
+10 
+program stopped by the user! 

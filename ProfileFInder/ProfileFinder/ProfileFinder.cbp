@@ -32,7 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="doctor.txt" />
+		<Unit filename="engineers.txt" />
 		<Unit filename="main.cpp" />
+		<Unit filename="police.txt" />
 		<Extensions>
 			<envvars />
 			<code_completion />

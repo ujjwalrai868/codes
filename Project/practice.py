@@ -1,0 +1,18 @@
+import PyGnuplot as gp
+import numpy as np
+gp.c('set style fill transparent solid 0.5 noborder')
+gp.c('set title "Result"; set xlabel "x-axis"; set ylabel "y-axis"')
+gp.c('set yrange [0:6000]; set key center top')
+gp.c('set xrange [10:100]; set key center top')
+#gp.c('set for [i=1:2] linetype i at i*5')
+gp.c("plot 'budgetfm.txt' u 1:2 w l t 'Total Payment Random")
+gp.c("replot 'total_budget.txt' u 1:2 w l t 'total budget")
+gp.c('set linetype 2 dt 0 lw 1 lc rgb "blue" pointtype 5 ')
+gp.c('set linetype 2 lw 1 lc rgb "forest-green" pointtype 5')
+gp.c("replot 'bid_sum.txt' u 1:2 w l t 'bid_sum" )
+#gp.c("replot 'normal.txt' u 1:2 w l t 'Total Payment")
+#gp.c("plot 'FO_large_var.txt' u 1:2 w l t 'FO large var")
+#gp.c("replot 'FO_medium_var.txt' u 1:2 w l t 'FO medium var")  
+#gp.c("replot 'FO_small_var.txt' u 1:2 w l t 'FO small var")  
+#gp.c("replot 'FirstOrder.txt' u 1:2 w l t 'First Order")  
+#gp.c("replot 'Wickery.txt' u 1:2 w l t 'Second Order")  
