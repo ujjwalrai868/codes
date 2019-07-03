@@ -30,7 +30,7 @@ for i in range(no_of_users):
 k=no_of_users
 for i in range(inpt):
 	service_providers.append(k+i+1)
-print 'service providers are: ',service_providers
+#print 'service providers are: ',service_providers
 #allocating availability of service providers
 for i in range(inpt):
 	ran=int(random.random()*1000)%100
@@ -76,17 +76,18 @@ for j in range (0,no_of_users):
     for k in range(s+1,len(service_providers)+1):
       b.append(0)
     pre.append(b)
-for i  in range(len(pre)):
+'''for i  in range(len(pre)):
 	print 'preferance list of ',i+1,'th user is:',
 	for j in range(len(pre[i])):
 		if pre[i][j]!=0:
 			print pre[i][j],
 	print '\n'
+	'''
 	#randomising the users list
 #make a new list of ith priority of all users
 i=0;
 random.shuffle(users)
-print 'shuffled users are:',users
+#print 'shuffled users are:',users
 for prefer in range(len(service_providers)):
 	for user in users:
 		l1.append(user)
@@ -100,7 +101,7 @@ for prelist in l3:
 	for lis in range(len(prelist)):
 		if prelist[lis][1]!=0:
 			if time_cons[prelist[lis][0]-1]<availability[prelist[lis][1]-1-no_of_users] and visit[prelist[lis][0]-1]==0:
-			    print prelist[lis][0],'is allocated to ',prelist[lis][1],'for',time_cons[prelist[lis][0]-1],'minutes'
+			    #print prelist[lis][0],'is allocated to ',prelist[lis][1],'for',time_cons[prelist[lis][0]-1],'minutes'
 			    '''f1.write(str(prelist[lis][0]))
 			    f1.write(str(prelist[lis][1]))
 			    f1.write('\n')'''
@@ -117,8 +118,8 @@ for i in range(len(visit)):
 	if visit[i]==1:
 		count+=1
 print 'total number of allocations are:',count
-print '\n'
-print 'unallocated agents are: ',
+#print '\n'
+'''print 'unallocated agents are: ',
 for i in range(len(visit)):
 	if visit[i]==0:
-		print i+1,
+		print i+1,'''

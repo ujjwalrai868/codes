@@ -222,7 +222,7 @@ for i in range(len(y2)):
 f2.write(str(c1))
 f2.write('\n')
 #----------------------------------------------
-'''g('set grid')
+g('set grid')
 x=[]
 for i in range(1,num+1):
   x.append(i)
@@ -237,4 +237,4 @@ g.plot(d1,d2)
 f1.close()
 f2.close()
 f3.close()
-f4.close()'''
+f4.close()

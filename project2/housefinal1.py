@@ -156,8 +156,9 @@ def main(graph,s):
    if len(lst)!=0:
        st=lst.pop(0)
    m=0
-   if len(l5)==len(agent):   return
-         m=1
+   if len(l5)==len(agent):
+      return
+  # m=1
    if m==0:
            del lst[:]
            return main(graph,st)
